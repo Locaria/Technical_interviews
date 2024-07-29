@@ -1,10 +1,23 @@
 ## no comments
-## no error handling (if error, pipeline will fail)
-## no edge-case handling (if input != int, it'll throw an error)
+## -- No Docstring, no explanation of what the code does, no inline comments
+
+## no error handling 
+## -- No try-except block, no logging, no error handling
+## -- If there's an error, the pipeline will fail without any error message
+
+## no edge-case handling 
+## -- No handling for edge cases where 'value' might not be present or not an integer
+## -- If the input data is not as expected, the pipeline will fail without any error message
+
 ## input is hard-coded in the pipeline instead of being passed as an argument (i.e. via PipelineOptions)
+## -- not parameterized for flexibility and reusability
+
 ## output is hard-coded just as file name, without any path. (also not as an argument)
-## -> function not reusable
+## -- not parameterized for flexibility and reusability
+
 ## variable names (i.e. final_variable, ultimate_variable) are not descriptive
+## -- not following best practices for variable naming
+## -- makes the code harder to read and understand
 
 
 import apache_beam as beam
