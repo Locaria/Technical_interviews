@@ -1,6 +1,9 @@
 ## no comments
 ## -- No Docstring, no explanation of what the code does, no inline comments
 
+## RemovePositiveNumbers removes negative numbers, not positive numbers
+## -- The function name is misleading and does not match the actual behavior
+
 ## no error handling 
 ## -- No try-except block, no logging, no error handling
 ## -- If there's an error, the pipeline will fail without any error message
@@ -20,6 +23,7 @@
 ## -- makes the code harder to read and understand
 
 
+## BELOW A POSSIBLE IMPROVED SOLUTION
 import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions, GoogleCloudOptions
 from apache_beam.io import ReadFromBigQuery, WriteToText
