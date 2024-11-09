@@ -114,8 +114,15 @@ import logging
 from typing import List
 from math import pi
 
-# Set up logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Set up logging to write to a file and console
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("etl_process.log"),  # File to store logs
+        logging.StreamHandler()  # Also log to console
+    ]
+)
 
 # Global constants for FTP and Google Sheets credentials
 FTP_USERNAME = "loc_user501"
