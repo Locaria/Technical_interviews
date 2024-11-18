@@ -29,7 +29,6 @@ from oauth2client.service_account import ServiceAccountCredentials
 ## - df["NewColumn"] = 0; for loop to fill the column (inefficient, could be done with vectorized operations)
 ## -> (could be done with df['NewColumn'] = df['Column2'] ** 2)
 
-
 ## Inefficient data upload to Google Sheets
 ## -- Converting DataFrame to list row-by-row for upload
 ## -- Better would be to use batch update or at least convert the DataFrame to a list of lists
